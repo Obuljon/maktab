@@ -2,7 +2,7 @@ import express from 'express';
 import { connect } from 'mongoose';
 import session from 'express-session';
 import layout from 'express-ejs-layouts';
-import HomeRouter from './routers/home.router.js';
+import HomeRouter from './routers/main.router.js';
 connect('mongodb://localhost/maktab', {useNewUrlParser: true, useUnifiedTopology: true});
 const app = express();
 
