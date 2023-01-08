@@ -1,4 +1,4 @@
-import RegisterBase from '../models/register.module.js';
+import RegisterBase from '../../models/register/register.module.js';
 import {compare} from 'bcrypt';
 class Singin {
     singinPage(req, res) {

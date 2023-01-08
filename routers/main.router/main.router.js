@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import SingUp from '../controllers/singup.controller.js';
-import SingIn from '../controllers/singin.controller.js';
+import SingUp from '../../controllers/singup/singup.controller.js';
+import SingIn from '../../controllers/singin/singin.controller.js';
 
 const router = new Router();
 

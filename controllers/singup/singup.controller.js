@@ -1,4 +1,4 @@
-import Registerbase from '../models/register.module.js';
+import Registerbase from '../../models/register/register.module.js';
 import {hash} from 'bcrypt';
 class Singup {
     singupPage(req, res) {

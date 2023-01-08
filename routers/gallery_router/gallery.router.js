@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import Gallery from '../controllers/gallery.controller.js';
+import Gallery from '../../controllers/gallery/gallery.controller.js';
 
 const router = new Router();
 
