@@ -12,7 +12,7 @@ class Singin {
             const passed = await compare(password, user.password);
             if (passed) {
                 req.session.user = user;
-             return res.redirect('/');
+             return res.redirect('/gallery');
             } else {
                  res.redirect('/singin');
             }
