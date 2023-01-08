@@ -44,7 +44,7 @@
         <div class="col-lg-12 col-md-12">
           <div class="mu-service-area">
             <!-- Start single service -->
-            <% data.forEach(item => {%>
+            <% service.forEach(item => {%>
               <div class="mu-service-single">
                 <span class="<%= item.spanName %>"></span>
                 <h3><%= item.title %></h3>
@@ -300,7 +300,7 @@
           <!-- start from blog content   -->
           <div class="mu-from-blog-content">
             <div class="row">
-              <% newfromblog.forEach(item => {  %>
+              <% fromblog.forEach((item, index) => { if(index % 2 == 0){  %>
                 <div class="col-md-4 col-sm-4">
                   <article class="mu-blog-single-item">
                     <figure class="mu-blog-single-img">
@@ -320,7 +320,7 @@
                     </div>
                   </article>
                 </div>
-              <%}) %>
+              <% } }) %>
             </div>
           </div>     
           <!-- end from blog content   -->   
