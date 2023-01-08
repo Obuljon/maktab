@@ -61,18 +61,18 @@
             <div class="mu-gallery-body">
               <ul id="mixit-container" class="row">
                 <!-- start single gallery image -->
-                <% Imgs.forEach(img => { %>
+                <% ImgBase.forEach(img => { %>
                     <li class="col-md-4 col-sm-6 col-xs-12 mix lab">
                         <div class="mu-single-gallery">                  
                           <div class="mu-single-gallery-item">
                             <div class="mu-single-gallery-img">
-                              <a href="#"><img alt="img" src="assets/img/gallery/small/<%= img.imgName %>"></a>
+                              <a href="#"><img alt="img" src="assets/img/gallery/small/<%= img.img %>"></a>
                             </div>
                             <div class="mu-single-gallery-info">
                               <div class="mu-single-gallery-info-inner">
                                 <h4><%= img.name %></h4>
-                                <p><%= img.Webdisagn %></p>
-                                <a href="assets/img/gallery/big/<%= img.imgName %>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                                <p><%= img.design %></p>
+                                <a href="assets/img/gallery/big/<%= img.img %>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                                 <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                               </div>
                             </div>                  

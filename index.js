@@ -3,6 +3,7 @@ import { connect } from 'mongoose';
 import session from 'express-session';
 import layout from 'express-ejs-layouts';
 import HomeRouter from './routers/main.router.js';
+import GalleryRouter from './routers/gallery.router.js';
 connect('mongodb://localhost/maktab', {useNewUrlParser: true, useUnifiedTopology: true});
 const app = express();
 
@@ -22,6 +23,7 @@ app.use((req, res, next) => {
     res.locals.user = req.session.user || "";
     next();
 })
-app.use('/', HomeRouter);
+app.use(HomeRouter);
+app.use(GalleryRouter);
 
 app.listen(8080, () => console.log('server is runnning Port:8080'));
