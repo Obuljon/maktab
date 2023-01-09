@@ -5,7 +5,7 @@ class Contact {
     }
     async Contact(req, res) {
         await ContactBase.create(req.body);
-        res.redirect('/contact');
+        res.redirect('/contactsms');
     }
 }
 

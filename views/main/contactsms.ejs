@@ -1,0 +1,23 @@
+<div class="comments">
+    <ul class="commentlist">
+        <% ContactSms.forEach(info => { %>
+          <li>
+            <div class="media">
+          <div class="media-left">    
+            <img alt="img" src="assets/img/user.png" class="media-object news-img" width="50" height="50"> 
+          </div>
+          <div class="media-body">
+           <h4 class="author-name"><%= info.name%></h4>
+           <span class="comments-date"><%= info.subject%></span>
+           <p><%= info.comment %></p>
+           <a class="reply-btn" href="#">Reply <span class="fa fa-long-arrow-right"></span></a>
+           <a class="btn btn-danger btn-sm" href="/delete/<%= info._id%>">Delete <span class="fa fa-long-arrow-right"></span></a>
+
+          </div>
+        </div>
+      </li>
+        <% }) %>
+      <!--  -->
+    </ul>
+    <!-- comments pagination -->
+    <div>

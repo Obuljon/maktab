@@ -6,6 +6,7 @@ import HomeRouter from './routers/main.router/main.router.js'
 import GalleryRouter from './routers/gallery_router/gallery.router.js';
 import Homepage from "./routers/homePage/homerouter.js"
 import ContactRouter from './routers/contact_router/contact_router.js';
+import Contact_sms_Router from './routers/contactsms_router/contact_sms_router.js';
 connect('mongodb://localhost/maktab', {useNewUrlParser: true, useUnifiedTopology: true});
 const app = express();
 
@@ -29,5 +30,5 @@ app.use(Homepage)
 app.use(HomeRouter);
 app.use(GalleryRouter);
 app.use(ContactRouter);
-
+app.use(Contact_sms_Router);
 app.listen(8080, () => console.log('server is runnning Port:8080'));
