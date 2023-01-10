@@ -1,7 +1,6 @@
 {
   "name": "maktab",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -27,5 +26,6 @@
     "express-session": "^1.17.3",
     "mongoose": "^6.8.3",
     "multer": "^1.4.5-lts.1"
-  }
+  },
+  "description": ""
 }
