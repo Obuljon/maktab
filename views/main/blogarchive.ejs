@@ -39,26 +39,28 @@
          <div class="mu-course-content-area">
             <div class="row">
               <div class="col-md-9">
+                <a href="addblog" class="btn btn-danger btn-sm">+ Add Blog</a>
                 <!-- start course content container -->
                 <div class="mu-course-container mu-blog-archive">
                   <div class="row">
-                    <% fromblog.forEach(item => {%>
+                    
+                    <% Blgmodule.forEach(item => {%>
                       <div class="col-md-6 col-sm-6">
                         <article class="mu-blog-single-item">
                           <figure class="mu-blog-single-img">
-                            <a href="<%= item.linc %>"><img src="assets/img/blog/<%= item.img %>" alt="img"></a>
+                            <a href="/detail/<%= item._id%>"><img src="images/<%= item.img %>" alt="img"></a>
                             <figcaption class="mu-blog-caption">
-                              <h3><a href="<%= item.linc %>"><%= item.h3 %></a></h3>
+                              <h3><a href="/detail/<%= item._id%>"><%= item.title %></a></h3>
                             </figcaption>                      
                           </figure>
                           <div class="mu-blog-meta">
-                            <a href="<%= item.linc %>"><%= item.admin %></a>
-                            <a href="<%= item.linc %>"><%= item.date %></a>
-                            <span><i class="fa fa-comments-o"></i><%= item.commit %></span>
+                            <a href="/detail"><%= item.admin %></a>
+                            <a href="/detail/"><%= item.date %></a>
+                            <!-- <span><i class="fa fa-comments-o"></i><%= item.comment %></span> -->
                           </div>
                           <div class="mu-blog-description">
-                            <p><%= item.p %></p>
-                            <a class="mu-read-more-btn" href="/detail">Read More</a>
+                            <p><%= item.title %></p>
+                            <a class="mu-read-more-btn" href="/detail/<%= item._id %>">Read More</a>
                           </div>
                         </article> 
                       </div>                  

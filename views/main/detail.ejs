@@ -20,7 +20,7 @@
    <div class="row">
      <div class="col-md-12">
        <div class="mu-page-breadcrumb-area">
-         <h2><%= fan.title %></h2>
+         <h2>dsada</h2>
          <ol class="breadcrumb">            
           <li class="active">Darslardan tashqari qo'shimcha kurslar</li>
         </ol>
@@ -40,15 +40,16 @@
               <!-- start course content container -->
               <div class="mu-course-container mu-course-details">
                 <div class="row">
-                  <div class="col-md-12">
-                    <div class="mu-latest-course-single">
+                  
+                   
+                        <div class="col-md-12">
+                          <div class="mu-latest-course-single">
                       <figure class="mu-latest-course-img">
-                        <a href=""><img src="assets/img/<%= fan.img %>" alt="img"></a>
+                        <a href=""><img src="/images/<%= Blogarchive.img %>" alt="img"></a>
                       </figure>
                       <div class="mu-latest-course-single-content">
-                        <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo est itaque vero porro quasi illo ex consequuntur ad animi commodi, ipsam provident voluptas vel adipisci. Minima repellendus vel est, sequi labore quo ipsa voluptatem officiis ex fuga nemo quas. Eligendi inventore ducimus omnis, maxime, alias accusantium similique minus! Labore facilis qui, sunt, ipsam consectetur minus sapiente saepe numquam magnam quidem.</p>
+                        <h2><a href="#"><%= Blogarchive.title %></a></h2>
+                        <p><%= Blogarchive.comment%></p>
                         <blockquote>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat, ipsa. Modi sed quibusdam vel autem fugit, eaque, iste. Excepturi fugit dignissimos suscipit dolor perferendis debitis magni sed, quia ab.</p>
                         </blockquote>
@@ -56,7 +57,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi saepe possimus doloribus quod quibusdam officia suscipit qui illum nemo itaque, porro ipsam tempore enim error eius quia, culpa. Reprehenderit consequuntur voluptatem dolorum magni natus inventore molestias veritatis eos aspernatur repudiandae.</p>
                       </div>
                     </div> 
-                  </div>                                   
+                  </div>  
+                                                     
                 </div>
               </div>
               <!-- end course content container -->
@@ -68,22 +70,22 @@
                     <h3>Related Courses</h3>
                     <div class="mu-related-item-area">
                       <div id="mu-related-item-slide">
-                        <% course.forEach(item => {%>
+                        <% Find_.forEach(item => {%>
                           <div class="col-md-6">
                             <div class="mu-latest-course-single">
                               <figure class="mu-latest-course-img">
-                                <a href="/detail<%= item._id %>"><img alt="img" src="assets/img/<%= item.img %>"></a>
+                                <a href="/detail/<%= item._id %>"><img alt="img" src="/images/<%= item.img %>"></a>
                                 <figcaption class="mu-latest-course-imgcaption">
-                                  <a href="/detail<%= item._id %>"><%= item.fan %></a>
-                                  <span><i class="fa fa-clock-o"></i><%= item.kun %></span>
+                                  <!-- <a href="/detail<%= item._id %>"><%= item.fan %></a> -->
+                                  <span><i class="fa fa-clock-o"></i><%= item.date %></span>
                                 </figcaption>
                               </figure>
                               <div class="mu-latest-course-single-content">
-                                <h4><a href="/detail<%= item._id %>"><%= item.h4 %></a></h4>
+                                <h4><a href="/detail/<%= item._id %>"><%= item.title %></a></h4>
                                 <p><%= item.p %></p>
                                 <div class="mu-latest-course-single-contbottom">
                                   <a href="/detail<%= item._id %>" class="mu-course-details">Details</a>
-                                  <span href="/detail<%= item._id %>" class="mu-course-price"><%= item.narxi %></span>
+                                  <span href="/detail<%= item._id %>" class="mu-course-price"><%= item.date %></span>
                                 </div>
                               </div>
                             </div>
