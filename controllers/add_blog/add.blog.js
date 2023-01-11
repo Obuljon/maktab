@@ -24,5 +24,5 @@ class Addblog {
         res.redirect('/blogarchive');
     }
 }
-
+// dsds
 export default new Addblog();

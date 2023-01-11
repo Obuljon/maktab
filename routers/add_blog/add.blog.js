@@ -7,3 +7,4 @@ router.get('/addblog', AddBlogBase.addblogPage);
 router.post('/addblog', AddBlogBase.Add);
 
 export default router;
+// add blog
