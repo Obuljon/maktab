@@ -11,6 +11,7 @@ import DeleteRouter from './routers/delete_router/delete.router.js';
 import Blg_Archive_Router from './routers/blog_router/blg_archive.router.js';
 import DetailRouter from './routers/detail_router/detail.router.js';
 import BlogAddBaseRouter from './routers/add_blog/add.blog.js';
+import BlogSingle from './routers/blog_router/blg_single.router.js';
 import multer from "multer";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -43,6 +44,7 @@ app.use(DeleteRouter);
 app.use(Blg_Archive_Router);
 app.use(DetailRouter);
 app.use(BlogAddBaseRouter);
-
+app.use(Homepage);
+app.use(BlogSingle);
 app.listen(8080, () => console.log('server is runnning Port:8080'));
 
