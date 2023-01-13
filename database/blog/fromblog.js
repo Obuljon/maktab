@@ -6,9 +6,8 @@ export default [
         date: "24.12.2022",
         commit: "1000",
         p:"",
-        linc: "/news1",
-        next: "/news2",
-        prev: "/news6",
+        ID: "lesson1"
+ 
     },
     {
         img: "blog-2.jpg",
@@ -17,9 +16,9 @@ export default [
         date: "02 June 2016",
         commit: "0",
         p:"",
-        linc: "/news2",
-        next: "/news3",
-        prev: "/news1",
+        ID: "lesson2"
+
+
     },
     {
         img: "blog-3.jpg",
@@ -28,9 +27,8 @@ export default [
         date: "02 June 2016",
         commit: "0",
         p:"",
-        linc: "/news3",
-        next: "/news4",
-        prev: "/news2",
+        ID: "lesson3"
+
     },
     {
         img: "blog-4.jpg",
@@ -39,9 +37,8 @@ export default [
         date: "02 June 2016",
         commit: "0",
         p:"",
-        linc: "/news4",
-        next: "/news5",
-        prev: "/news3",
+        ID: "lesson4"
+
     },
     {
         img: "blog-5.jpg",
@@ -50,9 +47,9 @@ export default [
         date: "02 June 2016",
         commit: "0",
         p:"",
-        linc: "/news5",
-        next: "/news6",
-        prev: "/news4",
+        ID: "lesson5"
+
+
     },
     {
         img: "blog-6.jpg",
@@ -61,8 +58,6 @@ export default [
         date: "02 June 2016",
         commit: "0",
         p:"",
-        linc: "/news6",
-        next: "/news1",
-        prev: "/news5",
+        ID: "lesson6"
     },
 ]

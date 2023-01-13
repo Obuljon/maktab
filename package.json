@@ -25,7 +25,8 @@
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.3",
     "mongoose": "^6.8.3",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "npm-cli": "^0.1.0"
   },
   "description": ""
 }
