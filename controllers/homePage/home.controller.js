@@ -6,10 +6,10 @@ import teacherComtent from "../../database/homePage/teacher.comtent.js";
 import testimonial from "../../database/homePage/testimonial.js";
 import course from "../../database/kurs/course.js";
 import fromblog from "../../database/blog/fromblog.js";
-
+import aboutUs from "../../database/homePage/aboutUs.js";
 class About{
     aboutHome(req, res){
-        res.render("main/about", {features, slider, teacherComtent, counter, testimonial, service, course, fromblog })
+        res.render("main/about", {features, slider, teacherComtent, counter, testimonial, service, course, fromblog, aboutUs })
     }
 
     ourfeatures(req, res){
