@@ -61,10 +61,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <% if (!user) { %>
+
                 <li class="active"><a href="/singin">SingIn</a></li> 
               <li class="active"><a href="/singup">SingUp</a></li>      
-             <% } else { %>
+           
               <li class="active"><a href="/">Bosh sahifa</a></li>            
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kurs <span class="fa fa-angle-down"></span></a>
@@ -83,11 +83,7 @@
                 </li>            
                 <li><a href="/contact">Aloqa</a></li>    
                 <li><a href="/popularnews">Popular news</a></li>
-                  <li class="active"><a href="/logout">LogOut</a></li>            
-                  <li class="active"><a href="/user">User</a></li>
-              <% } %>
-            
-                   
+                  <li class="active"><a href="/logout">LogOut</a></li>                      
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
           </ul>                     
         </div><!--/.nav-collapse -->        
