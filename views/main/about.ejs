@@ -66,36 +66,37 @@
         <div class="col-md-12">
           <div class="mu-about-us-area">           
             <div class="row">
+             
               <div class="col-lg-6 col-md-6">
                 <div class="mu-about-us-left">
                   <!-- Start Title -->
-                  <div class="mu-title">
-                    <h2><%= aboutUs.h1 %></h2>              
+                    <div class="mu-title">
+                      <h2><%= about[0].h2 %></h2>              
+                    </div>
+                    <!-- End Title -->
+                    <p><%= about[0].onecomment %></p>
+                    <ul>
+                      <li><%= about[0].li1 %></li>
+                      <li><%= about[0].li2 %></li>
+                      <li><%= about[0].li3 %></li>
+                      <li><%= about[0].li4 %></li>
+                      <li><%= about[0].li5 %></li>
+                    </ul>
+                    <p><%= about[0].twocomment %></p>
                   </div>
-                  <!-- End Title -->
-                  <p><%= aboutUs.p1 %></p>
-                  <ul>
-                    <li><%= aboutUs.li1 %></li>
-                    <li><%= aboutUs.li2 %></li>
-                    <li><%= aboutUs.li3 %></li>
-                    <li><%= aboutUs.li4 %></li>
-                    <li><%= aboutUs.li5 %></li>
-                  </ul>
-                  <p><%= aboutUs.p2 %></p>
                 </div>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <div class="mu-about-us-right">                            
-                <a id="mu-abtus-video" href="/assets/img/video/1.mp4" target="mutube-video">
-                  <img src="assets/img/about-us.jpg" alt="img">
-                </a>                
+                <div class="col-lg-6 col-md-6">
+                  <div class="mu-about-us-right">                            
+                    <a id="mu-abtus-video" href="/assets/img/video/<%= about[0].video %>" target="mutube-video">
+                      <img src="assets/img/<%= about[0].img %>" alt="img">
+                    </a>                
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- End about us -->
   
@@ -115,13 +116,13 @@
                     <p><%= item.p %></p>
                   </div>
                 </div>
-              <%}) %>
-              <!-- End counter item -->
+                <%}) %>
+                <!-- End counter item -->
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- End about us counter -->
   
@@ -146,14 +147,14 @@
                       <span class="<%= item.span %>"></span>
                       <h4><%= item.nameh4 %></h4>
                       <p><%= item.p %></p>
-                      <a href="/<%= item._id %>">Read More</a>
+                      <a href="/features<%= item._id %>">Read More</a>
                     </div>
                   </div>
-                <%}) %>
+                  <%}) %>
+                </div>
               </div>
+              <!-- End features content  -->
             </div>
-            <!-- End features content  -->
-          </div>
           <!-- End features content -->
         </div>
       </div>
@@ -196,9 +197,9 @@
                   </div>
                 </div>
               </div>
-            <%}) %>
-          </div>
-          <!-- End latest course content -->
+              <%}) %>
+            </div>
+            <!-- End latest course content -->
         </div>
       </div>
     </div>
@@ -275,21 +276,21 @@
                   <span><%= item.kasp %></span>
                 </div>
               </div>
-            <% }) %>
-            <!-- end testimonial single item -->
+              <% }) %>
+              <!-- end testimonial single item -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End testimonial -->
-
-<!-- Start from blog -->
-<section id="mu-from-blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+  </section>
+  <!-- End testimonial -->
+  
+  <!-- Start from blog -->
+  <section id="mu-from-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
         <div class="mu-from-blog-area">
           <!-- start title -->
           <div class="mu-title">
@@ -320,8 +321,8 @@
                     </div>
                   </article>
                 </div>
-              <% } }) %>
-            </div>
+                <% } }) %>
+              </div>
           </div>     
           <!-- end from blog content   -->   
         </div>

@@ -1,0 +1,46 @@
+<div class="container"style="width: 45%; margin: auto;">
+    <form action="/aboutUsEdit" method="post" enctype="multipart/form-data">
+            <div class="form-group" >
+                <label for="video" >video</label>
+                <input type="file" accept="video/mp4" class="form-control"  id="video" name="video" value="">
+            </div>
+            <div class="form-group">
+                <label for="img" >Img</label>
+                <input type="file" class="form-control"  id="img" name="img">
+            </div>
+            <div class="form-group"  >
+                <p class="comment-form-comment" >
+                <label for="comment">two message</label>
+                <textarea required="required" aria-required="true" rows="8" cols="78" name="onecomment" id="onecomment" value="<%= aboutus[0].onecomment %>"></textarea>
+            </p>                
+        </div>
+        <div class="form-group">
+            <label for="comment">1-qisqa sharx</label>
+            <input type="text" class="form-control"  id="onecomment" name="onecomment" value="<%= aboutus[0].li1 %>">
+        </div>
+        <div class="form-group">
+            <label for="comment">2-qisqa sharx</label>
+            <input type="text" class="form-control"  id="twocomment" name="twocomment" value="<%= aboutus[0].li2 %>">
+        </div>
+        <div class="form-group">
+            <label for="comment">3-qisqa sharx</label>
+            <input type="text" class="form-control"  id="threecomment" name="threecomment" value="<%= aboutus[0].li3 %>">
+        </div>
+        <div class="form-group">
+            <label for="comment">4-qisqa sharx</label>
+            <input type="text" class="form-control"  id="fourcomment" name="fourcomment" value="<%= aboutus[0].li4 %>">
+        </div>
+        <div class="form-group">
+            <label for="comment">5-qisqa sharx</label>
+            <input type="text" class="form-control"  id="fivecomment" name="fivecomment" value="<%= aboutus[0].li5 %>">
+        </div>
+        <div class="form-group">
+            <p class="comment-form-comment" >
+                <label for="comment">two message</label>
+                <textarea required="required" aria-required="true" rows="8" cols="78" name="twocomment" id="twocomment" value="<%= aboutus[0].twocomment %>"></textarea>
+            </p>                
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
