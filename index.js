@@ -14,19 +14,20 @@ import DetailRouter from './routers/detail_router/detail.router.js';
 import BlogAddBaseRouter from './routers/add_blog/add.blog.js';
 import BlogSingle from './routers/blog_router/blg_single.router.js';
 import CourseRouter from './routers/Course/coursearchive.router.js';
-import multer from "multer";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+
 connect('mongodb://localhost/maktab', {useNewUrlParser: true, useUnifiedTopology: true});
 const app = express();
 
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended: true}));
-app.use(multer({dest: 'public/images'}).single('img'));
+
 app.use(express.static(`${dirname(fileURLToPath(import.meta.url))}/public`)); 
 app.use(express.json());
 app.use(layout);
+
 app.use(session({
     secret: "School",
     cookie: {maxAge: 1000 * 60 * 60 * 24},
@@ -37,7 +38,7 @@ app.use((req, res, next) => {
     res.locals.user = req.session.user || "";
     next();
 })
-app.use(Homepage)
+
 app.use(HomeRouter);
 app.use(GalleryRouter);
 app.use(ContactRouter);
