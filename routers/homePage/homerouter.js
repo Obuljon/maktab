@@ -6,7 +6,7 @@ router.get("/", HomePage.aboutHome );
 router.get("/features:_id", HomePage.ourfeatures);
 router.get("/aboutusEdit", HomePage.aboutUsEdit)
 
-router.post("/aboutusEdit", HomePage.EditAboutUs);
+router.post("/aboutusEdit", HomePage.aboutUsEdit);
 
 export default router
 

@@ -4,6 +4,10 @@ class Detail {
         
         res.render('main/detail', {course})
     }
+    detailPage(req, res){
+        let fan = course[0]
+        res.render("main/detail", { course, fan} )
+    }
 }
 
 export default new Detail();
